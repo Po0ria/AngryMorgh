@@ -10,11 +10,11 @@ public abstract class Gun implements GameInterfaceComponentManager,GameInterface
     private int damage;
     private int ammo;
     private int pushBack;
-    public Gun(int damage,int ammo,int pushBack)
+    public Gun(int _damage,int _ammo,int _pushBack)
     {
-        this.damage = damage;
-        this.ammo = ammo;
-        this.pushBack = pushBack;
+        damage = _damage;
+        ammo = _ammo;
+        pushBack = _pushBack;
     }
 
 
