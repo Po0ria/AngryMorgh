@@ -3,10 +3,13 @@ package GameLogic.Objects;
 import GameUI.GameWindow.GameInterface;
 import GameUI.GameWindow.GameInterfaceComponentManager;
 
+import java.awt.*;
+
 /**
  * Created by ATroskan on 1/13/2015.
  */
-public abstract class Gun implements GameInterfaceComponentManager,GameInterface {
+public abstract class Gun implements GameInterfaceComponentManager,GameInterface,Moving {
+    private Point location;
     private int damage;
     private int ammo;
     private int pushBack;
@@ -42,5 +45,14 @@ public abstract class Gun implements GameInterfaceComponentManager,GameInterface
         this.pushBack = pushBack;
     }
 
+    @Override
+    public void draw(Graphics g) {
+
+    }
+
+    @Override
+    public void move() {
+
+    }
 }
 //asdad

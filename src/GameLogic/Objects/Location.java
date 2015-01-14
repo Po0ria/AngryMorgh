@@ -3,29 +3,15 @@ package GameLogic.Objects;
 /**
  * Created by ATroskan on 1/13/2015.
  */
-public class Location {
+public class Location implements Comparable<Location>{
 
-    public int x;
-    public int y;
-    public Location()
-    {
-        x = 0;
-        y = 0;
-    }
+    int x, y;
 
-    public int getX() {
-        return x;
-    }
-
-    public void setX(int x) {
-        this.x = x;
-    }
-
-    public int getY() {
-        return y;
-    }
-
-    public void setY(int y) {
-        this.y = y;
+    public int compareTo(Location p) {
+        if (this.x == p.x) {
+            return this.y - p.y;
+        } else {
+            return this.x - p.x;
+        }
     }
 }
